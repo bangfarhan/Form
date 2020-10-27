@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<title>Form Farhan</title>
+	<style>
+		input{
+			width: 100%;
+			color: rgb(3, 88, 109);
+			height: auto;
+			font-size: 15px;
+		}
+		select{
+			color: rgb(3, 88, 109);
+			width: 100%;
+			background-color: white;
+			height: auto;
+			font-size: 15px;
+		}
+		html, body{
+			height: 100%;
+		}
+		h1{
+			font-size: 30px;
+		}
+		label{
+			width: 100%;		
+			font-size: 17px;
+		}
+		td{
+			padding-top: 1%;
+		}
+		fieldset{
+			color: white;
+			width: 30%;
+			background-color: transparent;
+			border-radius: 5%;
+			border: none;
+			box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+			padding-left: 30px;
+			padding-bottom: 30px;
+			padding-top: 30px;
+			padding-right: 30px;
+		}
+		body{
+			background-color: rgb(3, 88, 109);		
+		}
+		ul{
+			padding-left: 5%;
+			float: left;
+			list-style-type: none;
+		}
+		.checkbox{
+			width: auto;
+		}
+		table{
+			width: 100%;
+		}
+		button{
+			background-color: rgb(0, 155, 185);
+			width: 50%;
+			height: 30px;
+			color:white;
+		}
+		textarea{
+			width: 100%;
+			color: rgb(3, 88, 109);
+			height: auto;
+		}
+		.color{
+			width: 50%;
+			height: 30px;
+		}
+		.date{
+			width: 50%;
+		}
+		td{
+			width: 50%;
+		}
+		.container{
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<fieldset>
+			<h1>Form Registration</h1>
+			<form>
+				<table>
+					<tr>
+						<td colspan="2">
+							<label>Name</label>
+							<input type="text">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label>Email</label>
+							<input type="email">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label>Password</label>
+							<input type="password">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Gender</label>			
+							<select >
+								<option>Male</option>
+								<option>Female</option>
+							</select>
+						</td>
+						<td>
+							<label>Religion</label>
+							<select>
+								<option>Islam</option>
+								<option>Kristen</option>
+								<option>Budha</option>
+								<option>Katholik</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label>Address</label>
+							<textarea></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Hobbies</label>
+							<br>
+							<ul>
+								<li>
+									<input class="checkbox" type="checkbox" >Sports
+								</li>
+								<li>
+									<input class="checkbox" type="checkbox">Eat
+								</li>
+								<li>
+									<input class="checkbox" type="checkbox">Watch
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<input class="checkbox" type="checkbox">Read
+								</li>
+								<li>
+									<input class="checkbox" type="checkbox">Write
+								</li>
+								<li>
+									<input class="checkbox" type="checkbox">Game
+								</li>
+							</ul>	
+						</td>
+						<td>
+							<label>Graduates</label>
+							<br>
+							<ul>
+								<li>
+									<input class="checkbox" type="radio" name='graduates' value='pria'>2015
+								</li>
+								<li>
+									<input class="checkbox" type="radio" name='graduates' value='pria'>2016
+								</li>
+								<li>
+									<input class="checkbox" type="radio" name='graduates' value='pria'>2017
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<input class="checkbox" type="radio" name='graduates' value='pria'>2018
+								</li>
+								<li>
+									<input class="checkbox" type="radio" name='graduates' value='pria'>2019
+								</li>
+								<li>
+									<input class="checkbox" type="radio" name='graduates' value='pria'>2020
+								</li>
+							</ul>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Date of Birth</label>
+							<br>
+							<input class="date" type="date">
+						</td>
+						<td>
+							<label>Favorite Color</label>
+							<br>
+							<input class="color" type="color">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>
+							<button>SUBMIT</button>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+	</div>
+</body>
+</html>
+
